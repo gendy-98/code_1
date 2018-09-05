@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:text="First number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="25sp"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="16dp"
+            android:onClick="incNum1"/>
+        <!-- android:onClick="inc"
+         android:id="@+id/ine" -->
+
+        <TextView
+            android:id="@+id/first_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="16dp"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:padding="16dp"
+            android:onClick="decNum1"/>
+        <!-- android:onClick="inc"
+         -->
+
+
+
+    </LinearLayout>
+    <TextView
+        android:text="Second number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="25sp"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="16dp"
+            android:onClick="incNum2"/>
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+        <TextView
+            android:id="@+id/sec_num"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:padding="16dp"
+            android:onClick="decNum2"/>
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+
+    </LinearLayout>
+    <TextView
+        android:text="Choose the operation "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="25sp"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="16dp"
+            android:onClick="add"
+            />
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:padding="16dp"
+            android:onClick="subtract"/>
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:padding="16dp"
+            android:onClick="multi"/>
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:padding="16dp"
+            android:onClick="divid"/>
+        <!-- android:onClick="inc"
+        android:id="@+id/ine" -->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/result_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
+
+
+
+</LinearLayout>
